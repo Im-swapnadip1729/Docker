@@ -1,0 +1,10 @@
+version: '3'
+#how many contener we want 
+services:
+  mymongo: #contener name
+    image: "mongo"
+
+  mynode:
+    build: ./
+    ports:
+      - "8000:8000"
